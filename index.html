@@ -1,9 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 3</title>
     <script>
       tailwind.config = {
         theme: {
@@ -11,14 +32,50 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
           },
         },
       };
     </script>
-    <title>Assignment 3</title>
   </head>
-  <body>
-    <header></header>
+  <body class="font-manrope">
+    <header class="w-11/12 mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+
+          <a class="btn btn-ghost text-3xl font-extrabold"><i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] p-1"></i>
+            Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass  mx-2 p-1 rounded-full text-gray-300 border border-black p-2"></i>
+          <i class="fa-solid fa-cart-shopping mx-4 p-2 rounded-full text-gray-200 border border-black"></i>
+          <a class="btn bg-[#ABEF5F] rounded-full font-extrabold text-lg">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 rounded-full border border-black text-white bg-black p-1"></i></a>
+        </div>
+      </div>
+      <div class="flex border border-yellow-500 justify-center">
+        <img src="./assets/banner.png" alt="" class="border border-black">
+        
+      </div>
+        <h1 class="text-6xl font-extrabold w-3/4 text-center mx-auto mb-5">A barn house of this design has a striking appearance</h1>
+        <p class="text-base font-medium w-8/12 text-center mx-auto mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <div class="flex justify-center">
+          <a class="btn bg-[#ABEF5F] rounded-full font-extrabold text-lg justify-center items-center">View Details<i class="fa-solid fa-arrow-right -rotate-45 rounded-full border border-black text-black  bg-[#ABEF5F] bg-opacity-50 p-1"></i></a>
+        </div>
+      
+
+
+    </header>
     <main></main>
     <footer></footer>
   </body>
